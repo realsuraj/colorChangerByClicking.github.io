@@ -2,30 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   -->
+   <link rel="stylesheet" href="./bootstrap-4.5.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css.css">
    <title>Document</title>
 </head>
 <body>
-    <div id="container-4">
-        <h2 id="change-my-color"> Challenge 4: change color of all button </h2>
-    <div class="flex-box-pick-color">
-        <form action="">
-            <select name="backdrop" id="background" onchange="buttonColorChange(this)">
-            <option value="random"> random </option>
-            <option value="red"> red </option>
-            <option value="green"> green </option>
-            <option value="reset"> reset </option>
-        </select>
-        </form>
+    
+    <!-- nav bar  -->
+   <div class="bg-warning">
+    <section class="btn-danger">
+      <nav
+        class="navbar navbar-expand-lg"
+      >
+        <a class="navbar-brand text-white">Color Changer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-       <button class="btn btn-primary"> Wee </button>
-       <button class="btn btn-danger"> See </button>
-       <button class="btn btn-warning"> light </button>
-       <button class="btn btn-success"> night</button>
-    </div>
-    </div>
-    <script src="js.js"></script>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="#home"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">  
+              <a
+                class="nav-link text-white"
+                href="#symptoms"
+                tabindex="-1"
+                aria-disabled="true"
+                >color</a>
+            </li>
+            
+              
+
+            </li>
+          </ul>
+         
+        </div>
+      </nav>
+    </section>
+   </div>
+    <!-- nav bar end -->
+    
+      
+
+    <!-- side body  -->
+    
+
+    <!-- side body end -->
+
+
+    <!-- home section  -->
+
+   <div class="hometab bg-info">
+    <section class="bg-danger">
+      <div class="home">
+       <h1> color changing website </h1>
+       <h2> select the color  </h2>
+       <form action="">
+        <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+        <option value="random"> random </option>
+        <option value="red"> red </option>
+        <option value="green"> green </option>
+        <option value="reset"> reset </option>
+    </select>
+      </div>
+     </section>
+   </div>
+   
+  
+
+   <script src="js.js"></script>
 </body>
 </html>
